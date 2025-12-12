@@ -1,0 +1,65 @@
+/* soft pink, clean blog theme*/
+body {
+  background: #ffeef6 url('https://i.ibb.co/0c6JrjW/pink-flower-pattern.png');
+  background-size: 350px;
+  background-repeat: repeat;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+
+.container {
+  max-width:750px;
+  margin:40px auto;
+  background:white;
+  padding:30px;
+  border-radius:20px;
+  box-shadow: 0 0 20px rgba(255,150,180,0.25);
+}
+
+header h1{
+  color: #ff9bb0;
+  text-align:center;
+  margin-bottom:5px;
+}
+
+.site-badge {
+  text-align: center;
+  font-size:14px;
+  color: #ff5f93;
+  margin-bottom:20px;
+  letter-spacing:1px;
+}
+
+nav{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+nav a {
+  color:#ff5f93;
+  font-weight:bold;
+  text-decoration:none;
+}
+
+nav a:hover {
+  text-decoration:underline;
+}
+
+h2{
+  color:#ff6fa4;
+}
+
+.post h3{
+  color: #ff7fb2;
+  margin-bottom: 5px;
+}
+
+.footer-note{
+  text-align: center;
+  margin-top:40px;
+  color: #ff7fb2;
+  font-size: 13px;
+}
