@@ -1,65 +1,103 @@
-/* soft pink, clean blog theme*/
+/* Pastel pink dreamy theme */
 body {
-  background: #ffeef6 url('https://i.ibb.co/0c6JrjW/pink-flower-pattern.png');
-  background-size: 350px;
-  background-repeat: repeat;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
   color: #333;
+
+  /* Soft pastel pink gradient + subtle floral glow */
+  background: linear-gradient(135deg, #ffe6f1, #ffd3e8);
+  background-attachment: fixed;
 }
 
-
+/* White soft container */
 .container {
-  max-width:750px;
-  margin:40px auto;
-  background:white;
-  padding:30px;
-  border-radius:20px;
-  box-shadow: 0 0 20px rgba(255,150,180,0.25);
+  max-width: 750px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 35px;
+  border-radius: 25px;
+
+  /* Pastel pink outer glow */
+  box-shadow:
+    0 0 35px rgba(255, 160, 190, 0.35),
+    0 0 80px rgba(255, 190, 220, 0.25);
 }
 
-header h1{
-  color: #ff9bb0;
-  text-align:center;
-  margin-bottom:5px;
+/* Main blog title */
+header h1 {
+  color: #ff7ea8;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 32px;
+  letter-spacing: 1px;
 }
 
+/* Cute small label under the title */
 .site-badge {
   text-align: center;
-  font-size:14px;
-  color: #ff5f93;
-  margin-bottom:20px;
-  letter-spacing:1px;
+  font-size: 14px;
+  color: #ff5690;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
 }
 
-nav{
-  text-align:center;
-  margin-bottom:30px;
+/* Navigation */
+nav {
+  text-align: center;
+  margin-bottom: 35px;
 }
 
 nav a {
-  color:#ff5f93;
-  font-weight:bold;
-  text-decoration:none;
+  color: #ff5690;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: 0.2s;
 }
 
 nav a:hover {
-  text-decoration:underline;
+  color: #ff2f7a;
+  text-shadow: 0 0 8px rgba(255, 120, 160, 0.5);
 }
 
-h2{
-  color:#ff6fa4;
+/* Headings */
+h2 {
+  color: #ff5f93;
 }
 
-.post h3{
-  color: #ff7fb2;
+.post h3 {
+  color: #ff7faf;
   margin-bottom: 5px;
 }
 
-.footer-note{
+/* Footer note */
+.footer-note {
   text-align: center;
-  margin-top:40px;
+  margin-top: 40px;
   color: #ff7fb2;
   font-size: 13px;
 }
+
+/* Soft floral glow on edges (fake flowers) */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(255,255,255,0.8), rgba(255,200,220,0.0));
+  filter: blur(40px);
+  z-index: -1;
+}
+
+body::before {
+  top: -50px;
+  left: -50px;
+}
+
+body::after {
+  bottom: -50px;
+  right: -50px;
+}
+
