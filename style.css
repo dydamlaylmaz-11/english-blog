@@ -129,6 +129,7 @@ main {
 footer {
   margin-top: 70px;
   padding-bottom: 40px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,6 +138,12 @@ footer {
   color: var(--text-muted);
   font-size: 0.9rem;
 }
+
+footer p {
+  text-align: center;
+  width: 100%;
+}
+
 
 /* RABBIT */
 footer img {
