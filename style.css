@@ -25,8 +25,8 @@ header h1 {
 }
 
 header .quote {
-  color: #ff8fb8;
   font-size: 16px;
+  color: #ff8fb8;
 }
 
 /* ===== MAIN CONTAINER ===== */
@@ -36,20 +36,25 @@ header .quote {
   padding: 20px;
 }
 
-/* ===== 4 KUTU YAN YANA ===== */
+/* ===== 4 KUTU YAN YANA (HİZALI) ===== */
 .content {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 🔥 4 AYNI HİZA */
+  display: flex;              /* 🔥 NET */
+  justify-content: space-between;
   gap: 25px;
   margin-top: 40px;
 }
 
 /* ===== CARD ===== */
 .card {
+  flex: 1;                    /* 🔥 HERKES EŞİT */
   background: #ffffff;
   border-radius: 20px;
   padding: 25px;
+  min-height: 240px;          /* 🔥 HİZA SABİT */
   box-shadow: 0 10px 25px rgba(255, 150, 180, 0.25);
+  display: flex;              /* 🔥 İÇERİK DE DÜZGÜN */
+  flex-direction: column;
+  justify-content: center;
   transition: transform 0.3s ease;
 }
 
@@ -64,6 +69,7 @@ header .quote {
 
 .card p {
   font-size: 14px;
+  text-align: center;
 }
 
 /* ===== FOOTER ===== */
@@ -79,7 +85,7 @@ header .quote {
   position: fixed;
   top: 20px;
   right: 30px;
-  font-size: 60px;
+  font-size: 64px;            /* 🔥 BÜYÜK */
   cursor: pointer;
 }
 
