@@ -10,39 +10,28 @@ body {
   background: #ffeef6;
   font-family: 'Inter', Arial, sans-serif;
   color: #333;
-  line-height: 1.6;
 }
 
 /* ===== HEADER ===== */
 .header {
   text-align: center;
   padding: 60px 20px 40px;
-  position: relative;
 }
 
 .header h1 {
-  font-size: 38px;
+  font-size: 36px;
   color: #ff6fa4;
-  margin-bottom: 10px;
 }
 
 .header p {
-  font-size: 16px;
   color: #ff8fb8;
-}
-
-/* ===== BUNNY ===== */
-.bunny {
-  position: absolute;
-  top: 25px;
-  right: 30px;
-  font-size: 64px;
+  margin-top: 10px;
 }
 
 /* ===== MAIN CONTAINER ===== */
 .container {
   max-width: 1200px;
-  margin: 0 auto 80px;
+  margin: 0 auto 60px;
   padding: 0 20px;
 }
 
@@ -50,41 +39,63 @@ body {
 .content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  margin-top: 50px;
+  gap: 25px;
+  margin-top: 40px;
 }
 
 /* ===== CARD ===== */
 .card {
-  background: #ffffff;
-  border-radius: 24px;
+  background: #fff;
+  border-radius: 22px;
   padding: 30px 25px;
-  box-shadow: 0 12px 30px rgba(255, 140, 180, 0.25);
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  min-height: 220px;
+  box-shadow: 0 15px 35px rgba(255, 140, 180, 0.25);
+  transition: transform 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 22px 45px rgba(255, 120, 170, 0.35);
+  transform: translateY(-6px);
 }
 
+/* ===== TEXT ===== */
 .card h3 {
   color: #ff6fa4;
-  font-size: 18px;
   margin-bottom: 12px;
 }
 
 .card p {
   font-size: 14px;
-  color: #444;
+  line-height: 1.5;
+}
+
+/* ===== LINKS ===== */
+.card a {
+  display: inline-block;
+  margin-top: 14px;
+  text-decoration: none;
+  color: #fff;
+  background: #ff8fb8;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.card a:hover {
+  background: #ff6fa4;
 }
 
 /* ===== FOOTER ===== */
 .footer-note {
   text-align: center;
-  margin-top: 70px;
+  margin-top: 60px;
   font-size: 13px;
   color: #ff7fb2;
+}
+
+/* ===== BUNNY ===== */
+.bunny {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  font-size: 60px;
 }
