@@ -102,32 +102,29 @@ main {
 }
 
 footer {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-
+  width: 100%;
   margin-top: 80px;
   padding: 40px 20px;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-items: center;
 
   text-align: center;
   color: var(--text-muted);
   font-size: 0.9rem;
 }
 
+/* Yazı kesin merkez */
 footer p {
   margin: 0;
+  justify-self: center;
   text-align: center;
 }
 
-
+/* Tavşan */
 footer img {
+  margin-top: 14px;
   width: 64px;
-  margin-top: 120px;
   opacity: 0.95;
+  justify-self: center;
 }
