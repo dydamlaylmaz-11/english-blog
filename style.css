@@ -1,11 +1,9 @@
-/* ===== RESET ===== */
-* {
+ {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ===== BODY ===== */
 body {
   background: #ffeef6;
   font-family: 'Inter', Arial, sans-serif;
@@ -13,7 +11,6 @@ body {
   line-height: 1.6;
 }
 
-/* ===== HEADER ===== */
 .header {
   text-align: center;
   padding: 60px 20px 40px;
@@ -30,7 +27,6 @@ body {
   color: #ff8fb8;
 }
 
-/* ===== MAIN LAYOUT ===== */
 .container {
   max-width: 1000px;
   margin: 0 auto 60px;
@@ -40,7 +36,6 @@ body {
   gap: 40px;
 }
 
-/* ===== SIDEBAR ===== */
 .sidebar {
   background: #ffffff;
   border-radius: 20px;
@@ -72,7 +67,6 @@ body {
   text-decoration: underline;
 }
 
-/* ===== CONTENT CARDS ===== */
 .content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -115,8 +109,6 @@ body {
 .btn:hover {
   background: #ff6fa4;
 }
-
-/* ===== FOOTER NOTE ===== */
 .footer-note {
   text-align: center;
   margin-top: 60px;
