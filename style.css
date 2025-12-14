@@ -24,29 +24,29 @@ header h1 {
   margin-bottom: 10px;
 }
 
-header p {
+header .quote {
   color: #ff8fb8;
   font-size: 16px;
 }
 
-/* ===== CONTAINER ===== */
+/* ===== MAIN CONTAINER ===== */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* ===== CARDS AREA ===== */
+/* ===== 4 KUTU YAN YANA ===== */
 .content {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 🔥 4 YAN YANA */
+  grid-template-columns: repeat(4, 1fr); /* 🔥 4 AYNI HİZA */
   gap: 25px;
   margin-top: 40px;
 }
 
 /* ===== CARD ===== */
 .card {
-  background: #fff;
+  background: #ffffff;
   border-radius: 20px;
   padding: 25px;
   box-shadow: 0 10px 25px rgba(255, 150, 180, 0.25);
@@ -66,12 +66,20 @@ header p {
   font-size: 14px;
 }
 
+/* ===== FOOTER ===== */
+.footer-note {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 13px;
+  color: #ff7fb2;
+}
+
 /* ===== BUNNY ===== */
 .bunny {
   position: fixed;
   top: 20px;
   right: 30px;
-  font-size: 60px; /* 🔥 BÜYÜK */
+  font-size: 60px;
   cursor: pointer;
 }
 
