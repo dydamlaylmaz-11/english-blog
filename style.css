@@ -1,116 +1,25 @@
- {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   background: #ffeef6;
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: Arial, sans-serif;
   color: #333;
   line-height: 1.6;
 }
 
 .header {
   text-align: center;
-  padding: 60px 20px 40px;
-}
-
-.header h1 {
-  font-size: 36px;
-  color: #ff6fa4;
-  margin-bottom: 8px;
-}
-
-.header p {
-  font-size: 15px;
-  color: #ff8fb8;
+  margin: 40px 0;
 }
 
 .container {
-  max-width: 1000px;
-  margin: 0 auto 60px;
-  padding: 0 20px;
-  display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: 40px;
-}
-
-.sidebar {
-  background: #ffffff;
-  border-radius: 20px;
-  padding: 25px;
-  box-shadow: 0 8px 25px rgba(255, 150, 180, 0.25);
-}
-
-.sidebar h2 {
-  font-size: 18px;
-  color: #ff6fa4;
-  margin-bottom: 15px;
-}
-
-.sidebar ul {
-  list-style: none;
-}
-
-.sidebar li {
-  margin-bottom: 12px;
-}
-
-.sidebar a {
-  text-decoration: none;
-  color: #ff5f93;
-  font-weight: 600;
-}
-
-.sidebar a:hover {
-  text-decoration: underline;
-}
-
-.content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
 }
 
 .card {
-  background: #ffffff;
-  border-radius: 20px;
-  padding: 25px;
-  box-shadow: 0 8px 25px rgba(255, 150, 180, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(255, 150, 180, 0.25);
 }
-
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 16px 35px rgba(255, 120, 170, 0.4);
-}
-
-.card h3 {
-  color: #ff6fa4;
-  margin-bottom: 8px;
-}
-
-.card p {
-  font-size: 14px;
-  margin-bottom: 14px;
-}
-
-.btn {
-  display: inline-block;
-  padding: 8px 16px;
-  border-radius: 20px;
-  background: #ff8fb8;
-  color: #ffffff;
-  font-size: 13px;
-  text-decoration: none;
-}
-
-.btn:hover {
-  background: #ff6fa4;
-}
-.footer-note {
-  text-align: center;
-  margin-top: 60px;
-  font-size: 13px;
-  color: #
