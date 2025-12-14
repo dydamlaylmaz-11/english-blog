@@ -1,79 +1,63 @@
+<!-- =====================
+     index.html
+===================== -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Damla's English Blog</title>
-  <link rel="stylesheet" href="style.css">
-</head>
 
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
 
-  <div class="container">
+  <!-- Bunny Decoration -->
+  <div class="bunny">🐰</div>
 
-    <!-- HEADER -->
-    <header>
-      <h1>Damla's English Blog</h1>
-      <div class="site-quote">                 "Growth begins with small, consistent steps."   </div>
+  <header class="header">
+    <h1>Damla's English Blog</h1>
+    <p class="tagline">Progress grows quietly — one sentence at a time.</p>
+  </header>
 
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-      </nav>
-    </header>
+  <main class="container">
 
+    <aside class="sidebar">
+      <h2>Sections</h2>
+      <ul>
+        <li><a href="#">Daily Practice</a></li>
+        <li><a href="#">Vocabulary Journal</a></li>
+        <li><a href="#">Mini Stories</a></li>
+      </ul>
+    </aside>
 
-    <!-- WELCOME SECTION -->
-    <section class="welcome-box">
-      <h2>Welcome!</h2>
-      <p>
-        This is my personal English practice journal.  
-        I write here to improve my vocabulary, grammar, and expression skills.
-      </p>
-    </section>
-
-
-    <!-- FEATURED POSTS (2 side-by-side boxes) -->
-    <section class="featured-posts">
+    <section class="content">
       <div class="card">
-        <h3>Daily Entry</h3>
-        <p>
-          Today I wrote about improving my English habits and staying motivated.
-        </p>
-        <a class="readmore" href="#">Read more →</a>
+        <h3>Daily Practice</h3>
+        <p>Short reflections and thoughts written every day to build confidence.</p>
       </div>
 
       <div class="card">
-        <h3>Vocabulary Log</h3>
-        <p>
-          New words I learned this week and example sentences.
-        </p>
-        <a class="readmore" href="#">Read more →</a>
+        <h3>Vocabulary Journal</h3>
+        <p>New words, example sentences, and small discoveries from daily study.</p>
+      </div>
+
+      <div class="card">
+        <h3>Mini Stories</h3>
+        <p>Creative writing to improve flow, tone, and natural expression.</p>
       </div>
     </section>
 
+  </main>
 
-    <!-- LATEST BLOG POSTS LIST -->
-    <section class="post-list">
-      <h2>Latest Posts</h2>
-
-      <div class="post">
-        <h3>My First Post</h3>
-        <p>Hello everyone! This is my first blog entry.</p>
-      </div>
-
-      <div class="post">
-        <h3>Why I Started This Blog</h3>
-        <p>I want to practice English daily and track my progress.</p>
-      </div>
-
-    </section>
-
-
-    <!-- FOOTER -->
-    <p class="footer-note">Made by Damla • Practice your English here.</p>
-
-  </div>
+  <footer class="footer-note">
+    Made by Damla • Practice your English here.
+  </footer>
 
 </body>
 </html>
-   
