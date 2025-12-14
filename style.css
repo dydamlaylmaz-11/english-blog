@@ -1,40 +1,128 @@
-body {
-  background-color: #ffeef6;
-  font-family: Arial, sans-serif;
-  color: #333;
+/* RESET */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-.header {
-  text-align: center;
-  padding: 40px 20px;
+/* BODY */
+body {
+  background: linear-gradient(180deg, #fff0f6, #ffe3ec);
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
 }
 
+/* BUNNY */
+.bunny {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  font-size: 70px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.bunny:hover {
+  transform: translateY(-10px) scale(1.1);
+}
+
+/* CONTAINER */
 .container {
   max-width: 900px;
-  margin: auto;
-  padding: 20px;
+  margin: 80px auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(255, 160, 190, 0.35);
 }
 
-.sidebar {
-  background: white;
-  padding: 20px;
-  border-radius: 16px;
-  margin-bottom: 20px;
+/* HEADER */
+header {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
+header h1 {
+  font-size: 36px;
+  color: #ff6f91;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #ff8fab;
+  font-style: italic;
+}
+
+/* NAV */
+nav {
+  margin-top: 20px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #ff5d8f;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* GRID */
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+/* CARDS */
 .card {
-  background: white;
-  padding: 20px;
-  border-radius: 16px;
-  margin-bottom: 20px;
-  box-shadow: 0 8px 20px rgba(255, 150, 180, 0.25);
+  background: #fff5fa;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(255, 150, 180, 0.25);
+  transition: transform 0.3s ease;
 }
 
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card h3 {
+  color: #ff5d8f;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 18px;
+  background: #ff6f91;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background: #ff4d79;
+}
+
+/* FOOTER */
 .footer-note {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 50px;
   font-size: 13px;
-  color: #ff7fb2;
+  color: #ff7fa3;
 }
+
