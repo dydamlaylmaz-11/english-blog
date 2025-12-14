@@ -1,38 +1,46 @@
-/* RESET */
+/* =========================
+   RESET
+========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* VARIABLES */
+/* =========================
+   VARIABLES
+========================= */
 :root {
   --bg: #fff5f8;
   --card-bg: #ffffff;
   --primary: #ff5f9e;
   --secondary: #ff9bbc;
-  --text-dark: #333;
+  --text-dark: #2f2f2f;
   --text-light: #666;
   --radius: 18px;
 }
 
-/* BODY */
+/* =========================
+   BODY
+========================= */
 body {
-  font-family: "Inter", system-ui, sans-serif;
-  background: var(--bg);
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg);
   color: var(--text-dark);
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 header {
   text-align: center;
   padding: 70px 20px 50px;
 }
 
 header h1 {
-  font-size: 2.8rem;
+  font-size: 2.7rem;
   color: var(--primary);
-  letter-spacing: -1px;
+  letter-spacing: -0.8px;
 }
 
 header p {
@@ -41,62 +49,76 @@ header p {
   font-size: 1rem;
 }
 
-/* MAIN */
+/* =========================
+   MAIN
+========================= */
 main {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 40px 20px 20px;
 }
 
-/* GRID */
+/* =========================
+   CARD GRID (3 × 2)
+========================= */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 32px;
 }
 
-/* CARD */
+/* TABLET */
+@media (max-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   CARD
+========================= */
 .card {
   background: var(--card-bg);
-  padding: 32px 26px;
+  padding: 34px 28px;
   border-radius: var(--radius);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
-  transition:
-    transform 0.2s ease-out,
-    box-shadow 0.2s ease-out;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.08);
+  transition: transform 0.18s ease-out, box-shadow 0.18s ease-out;
 }
 
-/* CONTROLLED HOVER */
+/* HOVER (CONTROLLED) */
 .card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 18px 35px rgba(255, 95, 158, 0.18);
+  box-shadow: 0 22px 40px rgba(255, 95, 158, 0.22);
 }
 
-
-/* HOVER */
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 30px 60px rgba(255, 95, 158, 0.25);
-}
-
-/* TITLES */
+/* =========================
+   CARD CONTENT
+========================= */
 .card h2 {
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   color: var(--primary);
   margin-bottom: 12px;
 }
 
-/* TEXT */
 .card p {
   font-size: 0.95rem;
   color: var(--text-light);
   line-height: 1.6;
 }
 
-/* SECTION LIST */
+/* =========================
+   SECTION LIST CARD
+========================= */
 .card ul {
   list-style: none;
-  margin-top: 16px;
+  margin-top: 18px;
 }
 
 .card ul li {
@@ -110,7 +132,7 @@ main {
   position: relative;
 }
 
-/* LINK UNDERLINE EFFECT */
+/* UNDERLINE EFFECT */
 .card ul a::after {
   content: "";
   position: absolute;
@@ -118,7 +140,7 @@ main {
   bottom: -4px;
   width: 0;
   height: 2px;
-  background: var(--primary);
+  background-color: var(--primary);
   transition: width 0.25s ease;
 }
 
@@ -126,10 +148,35 @@ main {
   width: 100%;
 }
 
-/* FOOTER */
+/* =========================
+   MUTED / COMING SOON CARD
+========================= */
+.card.muted {
+  opacity: 0.75;
+}
+
+.card.muted h2 {
+  color: var(--secondary);
+}
+
+/* =========================
+   FOOTER
+========================= */
 footer {
   text-align: center;
   padding: 50px 20px 30px;
   font-size: 0.85rem;
   color: var(--text-light);
+}
+
+/* FOOTER RABBIT */
+footer img {
+  width: 52px;
+  margin-top: 14px;
+  opacity: 0.9;
+  transition: transform 0.2s ease;
+}
+
+footer img:hover {
+  transform: scale(1.06);
 }
