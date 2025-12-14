@@ -1,21 +1,21 @@
-/* ===== RESET ===== */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ===== BODY ===== */
+/* BODY */
 body {
   background: #ffeef6;
   font-family: Arial, sans-serif;
   color: #333;
 }
 
-/* ===== HEADER ===== */
+/* HEADER */
 header {
   text-align: center;
-  padding: 50px 20px 30px;
+  padding: 50px 20px;
 }
 
 header h1 {
@@ -25,37 +25,37 @@ header h1 {
 }
 
 header .quote {
-  font-size: 16px;
   color: #ff8fb8;
+  font-size: 16px;
 }
 
-/* ===== MAIN CONTAINER ===== */
+/* CONTAINER */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* ===== 4 KUTU YAN YANA (HİZALI) ===== */
+/* CONTENT – 4 KUTU KİLİTLİ */
 .content {
-  display: flex;              /* 🔥 NET */
-  justify-content: space-between;
-  gap: 25px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 🔒 KİLİT */
+  gap: 20px;
   margin-top: 40px;
 }
 
-/* ===== CARD ===== */
+/* CARD */
 .card {
-  flex: 1;                    /* 🔥 HERKES EŞİT */
   background: #ffffff;
   border-radius: 20px;
   padding: 25px;
-  min-height: 240px;          /* 🔥 HİZA SABİT */
-  box-shadow: 0 10px 25px rgba(255, 150, 180, 0.25);
-  display: flex;              /* 🔥 İÇERİK DE DÜZGÜN */
+  height: 230px;              /* 🔒 YÜKSEKLİK SABİT */
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  transition: transform 0.3s ease;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(255, 150, 180, 0.25);
+  transition: transform 0.2s ease;
 }
 
 .card:hover {
@@ -69,10 +69,9 @@ header .quote {
 
 .card p {
   font-size: 14px;
-  text-align: center;
 }
 
-/* ===== FOOTER ===== */
+/* FOOTER */
 .footer-note {
   text-align: center;
   margin-top: 50px;
@@ -80,21 +79,11 @@ header .quote {
   color: #ff7fb2;
 }
 
-/* ===== BUNNY ===== */
+/* BUNNY */
 .bunny {
   position: fixed;
   top: 20px;
   right: 30px;
-  font-size: 64px;            /* 🔥 BÜYÜK */
-  cursor: pointer;
+  font-size: 64px;
 }
 
-.bunny:hover {
-  animation: hop 0.6s ease;
-}
-
-@keyframes hop {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-25px); }
-  100% { transform: translateY(0); }
-}
