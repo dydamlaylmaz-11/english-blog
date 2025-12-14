@@ -127,3 +127,25 @@ footer {
   width: 64px;
   height: auto;
 }
+.footer-center {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.footer-center p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.rabbit {
+  margin-top: 14px;
+  font-size: 2.2rem; /* EMOJI BOYUTU */
+  line-height: 1;
+}
+
